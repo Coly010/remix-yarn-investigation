@@ -2930,6 +2930,7 @@ __metadata:
     eslint-plugin-playwright: "npm:^0.15.3"
     eslint-plugin-react: "npm:7.32.2"
     eslint-plugin-react-hooks: "npm:4.6.0"
+    fs-extra: "npm:^11.2.0"
     isbot: "npm:^3.6.8"
     jsdom: "npm:~22.1.0"
     nx: "npm:18.0.5"
@@ -3766,7 +3767,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^18.0.0":
+"@types/react-dom@npm:^18.0.0, @types/react-dom@npm:^18.2.0":
   version: 18.2.19
   resolution: "@types/react-dom@npm:18.2.19"
   dependencies:
@@ -3775,7 +3776,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*":
+"@types/react@npm:*, @types/react@npm:^18.2.0":
   version: 18.2.60
   resolution: "@types/react@npm:18.2.60"
   dependencies:
@@ -4452,6 +4453,25 @@ __metadata:
   checksum: 10c0/57b06ae984bc32a0d22592c87384cd88fe4511b1dd7581497831c56d41939c8a001b28e7b853e1450f2bf61992dfcaa8ae2d0d161a0a90c4fb631ef07098fbac
   languageName: node
   linkType: hard
+
+"app-remix@workspace:apps/app-remix":
+  version: 0.0.0-use.local
+  resolution: "app-remix@workspace:apps/app-remix"
+  dependencies:
+    "@remix-run/dev": "npm:^2.3.0"
+    "@remix-run/eslint-config": "npm:^2.3.0"
+    "@remix-run/node": "npm:^2.3.0"
+    "@remix-run/react": "npm:^2.3.0"
+    "@remix-run/serve": "npm:^2.3.0"
+    "@types/react": "npm:^18.2.0"
+    "@types/react-dom": "npm:^18.2.0"
+    eslint: "npm:^8.38.0"
+    isbot: "npm:^3.6.8"
+    react: "npm:^18.2.0"
+    react-dom: "npm:^18.2.0"
+    typescript: "npm:^5.1.6"
+  languageName: unknown
+  linkType: soft
 
 "arch@npm:^2.1.0":
   version: 2.2.0
@@ -6817,7 +6837,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.0.0":
+"eslint@npm:^8.0.0, eslint@npm:^8.38.0":
   version: 8.57.0
   resolution: "eslint@npm:8.57.0"
   dependencies:
@@ -7490,7 +7510,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:^11.1.0":
+"fs-extra@npm:^11.1.0, fs-extra@npm:^11.2.0":
   version: 11.2.0
   resolution: "fs-extra@npm:11.2.0"
   dependencies:
@@ -11296,7 +11316,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:18.2.0":
+"react-dom@npm:18.2.0, react-dom@npm:^18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
   dependencies:
@@ -11360,7 +11380,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.2.0":
+"react@npm:18.2.0, react@npm:^18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
@@ -12934,7 +12954,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:~5.3.2":
+"typescript@npm:^5.1.6, typescript@npm:~5.3.2":
   version: 5.3.3
   resolution: "typescript@npm:5.3.3"
   bin:
@@ -12944,7 +12964,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A~5.3.2#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A^5.1.6#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A~5.3.2#optional!builtin<compat/typescript>":
   version: 5.3.3
   resolution: "typescript@patch:typescript@npm%3A5.3.3#optional!builtin<compat/typescript>::version=5.3.3&hash=e012d7"
   bin:

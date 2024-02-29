@@ -3,8 +3,10 @@
   "name": "app-remix",
   "description": "",
   "license": "",
-  "scripts": {},
   "type": "module",
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  },
   "dependencies": {
     "@remix-run/node": "^2.3.0",
     "@remix-run/react": "^2.3.0",
