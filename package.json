@@ -2,8 +2,8 @@
   "name": "@remix-yarn-investigation/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
   "private": true,
+  "packageManager": "yarn@4.1.0",
   "dependencies": {
     "@remix-run/node": "^2.3.0",
     "@remix-run/react": "^2.3.0",
