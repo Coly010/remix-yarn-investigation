@@ -33,6 +33,15 @@
       "options": {
         "targetName": "e2e"
       }
+    },
+    {
+      "plugin": "@nx/remix/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "startTargetName": "start",
+        "typecheckTargetName": "typecheck"
+      }
     }
   ],
   "generators": {
@@ -50,6 +59,13 @@
         "style": "css",
         "linter": "eslint"
       }
+    }
+  },
+  "targetDefaults": {
+    "@nx/remix:build": {
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": ["production", "^production"]
     }
   }
 }
