@@ -1,0 +1,67 @@
+{
+  "4034206127617459638": {
+    "build": {
+      "cache": true,
+      "dependsOn": [
+        "^build"
+      ],
+      "inputs": [
+        "production",
+        "^production",
+        {
+          "externalDependencies": [
+            "@remix-run/dev"
+          ]
+        }
+      ],
+      "outputs": [
+        "{workspaceRoot}/apps/app-remix/build",
+        "{workspaceRoot}/apps/app-remix/public/build"
+      ],
+      "command": "remix build",
+      "options": {
+        "cwd": "apps/app-remix"
+      }
+    },
+    "dev": {
+      "command": "remix dev --manual",
+      "options": {
+        "cwd": "apps/app-remix"
+      }
+    },
+    "start": {
+      "dependsOn": [
+        "build"
+      ],
+      "command": "remix-serve build/index.js",
+      "options": {
+        "cwd": "apps/app-remix"
+      }
+    },
+    "static-serve": {
+      "dependsOn": [
+        "build"
+      ],
+      "command": "remix-serve build/index.js",
+      "options": {
+        "cwd": "apps/app-remix"
+      }
+    },
+    "typecheck": {
+      "command": "tsc --project tsconfig.app.json",
+      "cache": true,
+      "inputs": [
+        "production",
+        "^production",
+        {
+          "externalDependencies": [
+            "typescript"
+          ]
+        }
+      ],
+      "options": {
+        "cwd": "apps/app-remix"
+      }
+    }
+  }
+}

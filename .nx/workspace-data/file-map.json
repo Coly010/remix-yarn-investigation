@@ -1,0 +1,390 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.6.1",
+  "deps": {
+    "@remix-run/css-bundle": "^2.8.0",
+    "@remix-run/node": "2.11.2",
+    "@remix-run/react": "2.11.2",
+    "@remix-run/serve": "2.11.2",
+    "isbot": "4.4.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "@nx/cypress": "19.6.1",
+    "@nx/devkit": "19.6.1",
+    "@nx/eslint": "19.6.1",
+    "@nx/eslint-plugin": "19.6.1",
+    "@nx/js": "19.6.1",
+    "@nx/playwright": "19.6.1",
+    "@nx/react": "19.6.1",
+    "@nx/remix": "19.6.1",
+    "@nx/vite": "19.6.1",
+    "@nx/web": "19.6.1",
+    "@nx/workspace": "19.6.1",
+    "@playwright/test": "^1.36.0",
+    "@remix-run/dev": "2.11.2",
+    "@remix-run/eslint-config": "2.11.2",
+    "@remix-run/testing": "^2.3.0",
+    "@swc-node/register": "1.9.2",
+    "@swc/cli": "0.3.14",
+    "@swc/core": "1.5.29",
+    "@swc/helpers": "0.5.12",
+    "@testing-library/jest-dom": "6.4.8",
+    "@testing-library/react": "15.0.6",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/node": "18.16.9",
+    "@types/react": "18.3.1",
+    "@types/react-dom": "18.3.0",
+    "@typescript-eslint/eslint-plugin": "7.18.0",
+    "@typescript-eslint/parser": "7.18.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "@vitest/coverage-v8": "1.6.0",
+    "@vitest/ui": "1.6.0",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-playwright": "^0.15.3",
+    "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "jsdom": "~22.1.0",
+    "nx": "19.6.1",
+    "prettier": "^2.6.2",
+    "typescript": "5.5.4",
+    "vite": "~5.0.0",
+    "vitest": "1.6.0"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "previewTargetName": "preview",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "serveStaticTargetName": "serve-static"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    },
+    {
+      "name": "@nx/remix/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "startTargetName": "start",
+        "typecheckTargetName": "typecheck"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "17866138117546000433"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "14206395567174321952"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "16448050467312557263"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "16362845859510497250"
+      },
+      {
+        "file": ".yarnrc.yml",
+        "hash": "12796128151632065134"
+      },
+      {
+        "file": "README.md",
+        "hash": "16893975561370846418"
+      },
+      {
+        "file": "nx.json",
+        "hash": "8278157060467329143"
+      },
+      {
+        "file": "package.json",
+        "hash": "16418760638438712555"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "16936441711144470533"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "18142923436060765612"
+      }
+    ],
+    "projectFileMap": {
+      "app-remix-e2e": [
+        {
+          "file": "apps/app-remix-e2e/.eslintrc.json",
+          "hash": "632147010597293032"
+        },
+        {
+          "file": "apps/app-remix-e2e/playwright.config.ts",
+          "hash": "6456172589317810710",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/app-remix-e2e/project.json",
+          "hash": "9559201665144020400"
+        },
+        {
+          "file": "apps/app-remix-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "apps/app-remix-e2e/tsconfig.json",
+          "hash": "13413400511057489941"
+        }
+      ],
+      "app-react-e2e": [
+        {
+          "file": "apps/app-react-e2e/.eslintrc.json",
+          "hash": "632147010597293032"
+        },
+        {
+          "file": "apps/app-react-e2e/playwright.config.ts",
+          "hash": "8663182722716644137",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/app-react-e2e/project.json",
+          "hash": "1972891080833091880"
+        },
+        {
+          "file": "apps/app-react-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "apps/app-react-e2e/tsconfig.json",
+          "hash": "13413400511057489941"
+        }
+      ],
+      "app-react": [
+        {
+          "file": "apps/app-react/.eslintrc.json",
+          "hash": "11012487992710232822"
+        },
+        {
+          "file": "apps/app-react/index.html",
+          "hash": "8327967366648052949"
+        },
+        {
+          "file": "apps/app-react/project.json",
+          "hash": "379335893525078627"
+        },
+        {
+          "file": "apps/app-react/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "apps/app-react/src/app/app.module.css",
+          "hash": "8887387885984320532"
+        },
+        {
+          "file": "apps/app-react/src/app/app.spec.tsx",
+          "hash": "14074163771316183913",
+          "deps": [
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/app-react/src/app/app.tsx",
+          "hash": "16134325549242323751"
+        },
+        {
+          "file": "apps/app-react/src/app/nx-welcome.tsx",
+          "hash": "729168762476089670"
+        },
+        {
+          "file": "apps/app-react/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/app-react/src/main.tsx",
+          "hash": "4731961929376199421",
+          "deps": [
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/app-react/src/styles.css",
+          "hash": "5195668842064076916"
+        },
+        {
+          "file": "apps/app-react/tsconfig.app.json",
+          "hash": "7232119452847825095"
+        },
+        {
+          "file": "apps/app-react/tsconfig.json",
+          "hash": "11166545116916107487"
+        },
+        {
+          "file": "apps/app-react/tsconfig.spec.json",
+          "hash": "9472099605191632308"
+        },
+        {
+          "file": "apps/app-react/vite.config.ts",
+          "hash": "18441026513006152235",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ],
+      "app-remix": [
+        {
+          "file": "apps/app-remix/.eslintignore",
+          "hash": "17606252396291060300"
+        },
+        {
+          "file": "apps/app-remix/.eslintrc.json",
+          "hash": "13800677001662881425"
+        },
+        {
+          "file": "apps/app-remix/.gitignore",
+          "hash": "14567294240656278501"
+        },
+        {
+          "file": "apps/app-remix/README.md",
+          "hash": "12857452560712936178"
+        },
+        {
+          "file": "apps/app-remix/app/nx-welcome.tsx",
+          "hash": "9805362460285814977"
+        },
+        {
+          "file": "apps/app-remix/app/root.tsx",
+          "hash": "17087154911476258661",
+          "deps": [
+            "npm:@remix-run/node",
+            "npm:@remix-run/react"
+          ]
+        },
+        {
+          "file": "apps/app-remix/app/routes/_index.tsx",
+          "hash": "14452892835984859085"
+        },
+        {
+          "file": "apps/app-remix/package.json",
+          "hash": "92593502892049038",
+          "deps": [
+            "npm:@remix-run/dev",
+            "npm:@remix-run/eslint-config",
+            "npm:@types/react@18.3.4",
+            "npm:@types/react-dom",
+            "npm:eslint",
+            "npm:typescript",
+            "npm:@remix-run/node",
+            "npm:@remix-run/react",
+            "npm:@remix-run/serve",
+            "npm:isbot@3.8.0",
+            "npm:react",
+            "npm:react-dom"
+          ]
+        },
+        {
+          "file": "apps/app-remix/project.json",
+          "hash": "743399495966789546"
+        },
+        {
+          "file": "apps/app-remix/public/favicon.ico",
+          "hash": "3730367829618743876"
+        },
+        {
+          "file": "apps/app-remix/remix.config.js",
+          "hash": "13229905242964738190",
+          "deps": [
+            "npm:@nx/remix"
+          ]
+        },
+        {
+          "file": "apps/app-remix/remix.env.d.ts",
+          "hash": "3987561439116594852"
+        },
+        {
+          "file": "apps/app-remix/test-setup.ts",
+          "hash": "5168060950525611498",
+          "deps": [
+            "npm:@remix-run/node",
+            "npm:@testing-library/jest-dom"
+          ]
+        },
+        {
+          "file": "apps/app-remix/tests/routes/_index.spec.tsx",
+          "hash": "9706041010828938636",
+          "deps": [
+            "npm:@remix-run/testing",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/app-remix/tsconfig.app.json",
+          "hash": "2277150793068250182"
+        },
+        {
+          "file": "apps/app-remix/tsconfig.json",
+          "hash": "16065953056953895657"
+        },
+        {
+          "file": "apps/app-remix/tsconfig.spec.json",
+          "hash": "7391822899442654683"
+        },
+        {
+          "file": "apps/app-remix/vitest.config.ts",
+          "hash": "16929899385403660173",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react",
+            "npm:@nx/vite"
+          ]
+        }
+      ]
+    }
+  }
+}
